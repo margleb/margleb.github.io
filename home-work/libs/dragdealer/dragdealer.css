@@ -1,0 +1,34 @@
+/*drugdiller*/
+
+.demo .dragdealer {
+    background: #e1e1e1;
+    height: 40px;
+    border-radius: 3px;
+}
+.dragdealer {
+    position: relative;
+    height: 30px;
+    background: #EEE;
+}
+
+.demo .dragdealer .red-bar {
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 3px;
+}
+.dragdealer .red-bar {
+    width: 100px;
+    height: 30px;
+    background: #CC0000;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+.dragdealer .handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,249 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+}
+
+.main_head {
+	background-color: #2F72BA;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: top center;
+	overflow: hidden;
+}
+
+
+.content {
+	width: 100%;
+	position: relative;
+}
+
+.logo {
+	margin-bottom: 20px;
+	max-width: 450px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.tac	{
+	text-align: center;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.pacient {
+	max-width: 455px;
+	display: inline-block;
+}
+
+.pill	{
+	max-width: 100px;
+	height: auto;
+	position: absolute;
+	left: 50px;
+	top: 250px;
+	transform: rotate(-45deg);
+	cursor: pointer;
+	z-index: 1000;
+}
+
+
+.pill img {
+	width: 100%
+}
+
+.pacient img {
+	width: 100%;
+}
+
+
+
+.s-wide {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/*drugdiller*/
+.demo .dragdealer {
+    background: #e1e1e1;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.dragdealer {
+		height: 30px;
+		border-radius: 100em;
+		background-color: #AFAFAF;
+		border: 1px solid #4D4742;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+		position: relative;
+		width: 100%
+		margin: 0 auto;
+}
+
+.slide {
+	max-width: 900px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.demo .dragdealer .red-bar {
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 3px;
+}
+.dragdealer .red-bar {
+   background-image: url(../img/roller_white.png);
+   width: 89px;
+	 height: 90px;
+}
+.dragdealer .handle {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    cursor: pointer;
+}
+
+.figures {
+	height: auto;
+	padding: 0 30px;
+	padding-bottom: 20px;
+}
+
+.figures img {
+	width: 100%;
+}
+
+
+
+.num {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.number {
+	display: inline-block;
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 30px;
+	padding: 0 13px;
+	color: #fff;
+}
+
+
+.tac  h2 {
+	margin-bottom: 18px;
+}
+
+h2 {
+	text-align: center;
+	color: #96BBE1;
+	margin-bottom: 65px;
+}
+
+	
+.button {
+	padding: 10px 60px;
+	color: #243E5A;
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 22px;
+	border: 1px solid #194473;
+	border-radius: 10px;
+	background: linear-gradient(to top, #92A5BB, #CFE1F5);
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	transition: background .5s ease;
+	display: inline-block;
+	margin-left: 10px;
+	outline: 0;
+	margin-bottom: 20px;
+}
+
+.button:first-child {
+	padding: 10px 72px;
+}
+
+.button:nth-child(3) {
+	padding: 10px 64px;
+	margin-bottom: 0;
+}
+
+
+.button:hover, .button:focus {
+	color: #243E5A;
+	text-decoration: none;
+	background: linear-gradient(to top, #92A5BB, #DDEFFF);
+}
+
+a.active {
+	box-shadow: 0 0 10px #171F2D  inset;
+}
+
+a.active:hover {
+	background: linear-gradient(to top, #92A5BB, #CFE1F5);
+}
+
+
+
+.hidden {
+	display: none;
+}
