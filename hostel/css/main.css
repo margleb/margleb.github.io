@@ -40,8 +40,9 @@ h1 {
   margin: 0;
   padding: 0; }
 
-a {
-  outline: 0; }
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none; }
 
 .s-wide {
   padding-top: 80px; }
@@ -72,20 +73,23 @@ a {
       list-style-type: none; }
       .top_line .main_nmu ul li {
         display: inline-block; }
-        .top_line .main_nmu ul li:hover a, .top_line .main_nmu ul li:focus a {
-          text-decoration: none;
+        .top_line .main_nmu ul li:hover a {
           color: #f9f9f9; }
-        .top_line .main_nmu ul li:hover span, .top_line .main_nmu ul li:focus span {
+        .top_line .main_nmu ul li:hover span {
           color: #ca5d59; }
         .top_line .main_nmu ul li a {
           display: block;
           padding: 10px 13px 0;
-          color: #dfdfdf; }
+          color: #dfdfdf;
+          transition: color 0.5s ease; }
         .top_line .main_nmu ul li span {
           display: block;
           color: #b63f3a;
           font-size: 30px;
           line-height: 1px; }
+          .top_line .main_nmu ul li span .fa {
+            transition: color 0.5s ease;
+            cursor: default; }
 
 .phoneadr .phone, .phoneadr .adr {
   font-family: "MyriadSetProThin", sans-serif;
@@ -193,6 +197,38 @@ a {
         text-decoration: none;
         transform: translateY(-1px);
         background-color: #c34742; }
+
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 14px;
+  float: right;
+  position: relative;
+  z-index: 20; }
+  .toggle-mnu span:after, .toggle-mnu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px; }
+  .toggle-mnu span:after {
+    top: 18px; }
+  .toggle-mnu span {
+    position: relative;
+    display: block; }
+  .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+    width: 100%;
+    height: 2px;
+    background-color: #b63f3a;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px; }
+  .toggle-mnu.on span {
+    background-color: transparent; }
+  .toggle-mnu.on span:before {
+    transform: rotate(45deg) translate(-1px, 0px); }
+  .toggle-mnu.on span:after {
+    transform: rotate(-45deg) translate(6px, -7px); }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {

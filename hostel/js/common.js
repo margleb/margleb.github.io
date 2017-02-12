@@ -11,6 +11,33 @@ $(window).resize(function() {
 });
 
 
+//toggle switcher
+$(".toggle-mnu").click(function() {
+if($(".main_nmu").is(":visible")) {
+	$(this).removeClass("on");
+	$(".main_nmu").fadeOut(1000);
+} else {
+	$(this).addClass("on");
+	$(".main_nmu").fadeIn(1000);
+}
+});
+
+//show mnu on resize
+$(window).resize(function() {
+	if($(this).width() >= 992) {
+		$(".main_nmu").show();
+		$(".toggle-mnu").removeClass("on");
+	} else {
+		if($(".toggle-mnu").hasClass("on")) {
+			$(".main_nmu").show();
+		} else {
+			$(".main_nmu").hide();
+		}
+	}
+});
+
+
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
