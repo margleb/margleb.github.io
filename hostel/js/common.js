@@ -24,7 +24,7 @@ if($(".main_nmu").is(":visible")) {
 
 //show mnu on resize
 $(window).resize(function() {
-	if($(this).width() >= 992) {
+	if($(this).width() > 992) {
 		$(".main_nmu").show();
 		$(".toggle-mnu").removeClass("on");
 	} else {
@@ -35,6 +35,37 @@ $(window).resize(function() {
 		}
 	}
 });
+
+//give divs sect
+i = 1
+while(i < 4) {
+$(".map").append("<a href='#' class='blocks sect_"+ i + "'><p class='text text_" + i + "'></p></a>");
+i++;
+}
+
+//text_field sect
+$(".text_1").text('8-ми месный общий номер');
+$(".text_2").text('8-ми месный женский номер');
+$(".text_3").text('8-ми местный мужской номер');
+
+
+$(".sect_1").addClass("active");
+$(".content-about + .preview").show();
+
+
+//tabs swither
+	$('.blocks').click(function(e) {
+		$(".blocks").removeClass("active");
+		$(this).addClass("active");
+		$(".preview").hide().eq($(this).index() - 1).fadeIn(1000);
+		e.preventDefault();
+	});
+
+//close preview
+	$('.preview .fa').click(function() {
+		$('.preview').fadeOut(1000);
+		$(".blocks").removeClass("active");
+	});
 
 
 
