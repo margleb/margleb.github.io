@@ -53,7 +53,7 @@ $(window).resize(function() {
 //give divs sect
 i = 1
 while(i < 4) {
-$(".map").append("<a href='#' class='blocks sect_"+ i + "'><p class='text text_" + i + "'></p></a>");
+$(".map").append("<a href='img/photos_plan/photo_" + i + ".jpg' class='blocks sect_"+ i + "'><p class='text text_" + i + "'></p></a>");
 i++;
 }
 
@@ -63,23 +63,17 @@ $(".text_2").text('8-ми месный женский номер');
 $(".text_3").text('8-ми местный мужской номер');
 
 
-$(".sect_1").addClass("active");
-$(".content-about + .preview").show();
-
 
 //tabs swither
-	$('.blocks').click(function(e) {
-		$(".blocks").removeClass("active");
+	$('.item-cont').click(function() {
+	if($(this).index() != $(".map_wrapper:visible").index()) {
+		$(".item-cont").removeClass("active");
+		$(".map_wrapper").hide().eq($(this).index()).fadeIn(1000);
 		$(this).addClass("active");
-		$(".preview").hide().eq($(this).index() - 1).fadeIn(1000);
-		e.preventDefault();
-	});
+	}
+});
 
-//close preview
-	$('.preview .fa').click(function() {
-		$('.preview').fadeOut(1000);
-		$(".blocks").removeClass("active");
-	});
+
 
 
 //scroll top
@@ -144,6 +138,47 @@ $(".item_gallery").magnificPopup({
 		}
 });
 
+//magnific popup maps photo
+$(".map .blocks").magnificPopup({
+		mainClass: 'mfp-zoom-in',
+		type: 'image',
+		tLoading: '',
+	removalDelay: 300,
+	callbacks: {
+			beforeChange: function() {
+			this.items[0].src = this.items[0].src + '?=' + Math.random(); 
+			},
+			open: function() {
+			$.magnificPopup.instance.next = function() {
+			var self = this;
+			self.wrap.removeClass('mfp-image-loaded');
+			setTimeout(function() { $.magnificPopup.proto.next.call(self); }, 120);
+			}
+			$.magnificPopup.instance.prev = function() {
+			var self = this;
+			self.wrap.removeClass('mfp-image-loaded');
+			setTimeout(function() { $.magnificPopup.proto.prev.call(self); }, 120);
+			}
+		},
+			imageLoadComplete: function() { 
+			var self = this;
+			setTimeout(function() { self.wrap.addClass('mfp-image-loaded'); }, 16);
+			}
+		}
+});
+
+
+
+/*$(".item-cont").click(function() {
+	var url = $(this).data("fooBar");
+	$(".item-cont").removeClass("active");
+	$(".wrap_mapper").remove();
+	$(".mapbottom").hide().append("<div class='wrap_mapper'></div>").fadeIn(1000);
+	$(this).addClass("active");
+}); */
+
+
+});
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -190,8 +225,6 @@ $(".video-js").click(function() {
 
 //equalHeight
 $(".item_rule").equalHeights();
-
-});
 
 $(window).load(function() {
 

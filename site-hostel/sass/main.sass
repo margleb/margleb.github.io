@@ -320,10 +320,6 @@ a:hover, a:focus
 			background-color: rgba(23,78,108,.5)
 			.text
 				text-decoration: none
-		&.active
-			background-color: rgba(23,78,108,.5)
-			.text
-				text-decoration: none
 		.text
 			margin: 0
 			padding: 0
@@ -354,57 +350,6 @@ a:hover, a:focus
 		height: 86px
 		background-color: transparent
 
-//превью
-.preview
-	margin-top: 40px
-	padding: 45px 45px 70px
-	min-height: 420px
-	overflow: hidden
-	position: relative
-	display: none
-	.button
-		position: absolute
-		right: 30px
-		bottom: 30px
-	&::before
-		content: ''
-		position: absolute
-		width: 25px
-		height: 25px
-		border-right: 2px solid #b63f3a
-		border-bottom: 2px solid #b63f3a
-		right: 0
-		bottom: 0
-		margin-right: 3px
-		margin-bottom: 3px
-	&::after
-		content: ''
-		position: absolute
-		width: 25px
-		height: 25px
-		border-left: 2px solid #b63f3a
-		border-top: 2px solid #b63f3a
-		left: 0
-		top: 0
-		margin-right: 3px
-		margin-bottom: 3px
-	.fa
-		position: absolute
-		right: 15px
-		top: 15px
-		font-size: 25px
-		cursor: pointer
-		-webkit-transition: all .5s ease
-		transition: all .5s ease
-		&:hover
-			color: #b63f3a
-	.img-wrapper
-		max-width: 456px
-		float: left
-		img
-			width: 100%
-	article
-		margin-left: 550px
 
 .sect-icons
 	background-color: rgba(64,64,64, .2)
@@ -438,7 +383,6 @@ a:hover, a:focus
 	transition: all .5s ease
 	cursor: pointer
 	z-index: 100
-	transition: background-color .25s ease
 	&.active
 		right: 10px
 	.fa
@@ -728,31 +672,61 @@ a:hover, a:focus
 		.content-left
 			margin-bottom: 20px
 			.item-cont
-				margin-bottom: 40px
+				margin-bottom: 35px
+				cursor: default
+				background-color: transparent
+				box-shadow: transparent 0 0 0 8px
+				padding: 10px 15px
+				transition: background-color .8s ease,-webkit-box-shadow .8s ease
+				transition: box-shadow .8s ease,background-color .8s ease,
+				&:hover
+					background-color: #e9e7e6
+					box-shadow: rgba(201, 198, 197, 0.5) 0 0 0 8px
+					h3
+						text-indent: 2px
+				&.active
+					background-color: #e9e7e6
+					box-shadow: rgba(201, 198, 197, 0.5) 0 0 0 8px
+					h3
+						text-indent: 2px
 				h3
 					margin: 0
+					padding: 0
+					transition: text-indent .8s ease
 					i
 						margin-right: 15px
 						font-size: 20px
 						color: #f54e4e
+						transition: margin-bottom .25s ease
+						margin-bottom: 0
 					.fa-mobile
 						font-size: 25px
-
 			p
 				margin: 0
-		.item-cont-last
-			margin-bottom: 15px
-		a
-			font-size: 20px
-			color: #f54e4e
-			.fa-facebook
+			.phonemob
+				margin-bottom: 15px
+				cursor: default
+				padding: 10px 15px
+				h3
+					margin: 0
+				i
+					margin-right: 15px
+					font-size: 30px
+					color: #f54e4e
+			a
+				font-size: 20px
+				color: #f54e4e
 				margin-left: 15px
+
 		.mapbottom
 			width: 100%
 			height: 400px
 			background-color: #ccc
 			border: 3px solid #f54e4e
-
+			.map_wrapper
+				display: none
+			.map-first
+				display: block
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
