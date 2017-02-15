@@ -302,13 +302,13 @@ a:hover, a:focus {
       font-size: 0.9375em;
       color: #174E6C;
       text-decoration: underline dashed;
-      margin-top: 12px; }
+      margin-top: 10px; }
       .map .blocks .text:hover, .map .blocks .text:focus {
         text-decoration: none; }
   .map .sect_1 {
     right: 6%;
     top: 9%;
-    width: 40%;
+    width: 135px;
     height: 21%;
     background-color: transparent; }
   .map .sect_2 {
@@ -321,7 +321,37 @@ a:hover, a:focus {
     left: 6%;
     bottom: 9%;
     width: 108px;
-    height: 86px;
+    height: 87px;
+    background-color: transparent; }
+  .map .sect_4 {
+    left: 6%;
+    top: 80px;
+    width: 88px;
+    height: 62px;
+    background-color: transparent; }
+  .map .sect_5 {
+    left: 32%;
+    top: 32px;
+    width: 74px;
+    height: 46px;
+    background-color: transparent; }
+  .map .sect_6 {
+    left: 32%;
+    top: 80px;
+    width: 75px;
+    height: 62px;
+    background-color: transparent; }
+  .map .sect_7 {
+    left: 40%;
+    top: 142px;
+    width: 47px;
+    height: 96px;
+    background-color: transparent; }
+  .map .sect_8 {
+    left: 38%;
+    bottom: 32px;
+    width: 54px;
+    height: 87px;
     background-color: transparent; }
 
 .sect-icons {

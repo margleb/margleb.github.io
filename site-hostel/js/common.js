@@ -52,7 +52,7 @@ $(window).resize(function() {
 
 //give divs sect
 i = 1
-while(i < 4) {
+while(i < 9) {
 $(".map").append("<a href='img/photos_plan/photo_" + i + ".jpg' class='blocks sect_"+ i + "'><p class='text text_" + i + "'></p></a>");
 i++;
 }
@@ -61,6 +61,36 @@ i++;
 $(".text_1").text('8-ми месный общий номер');
 $(".text_2").text('8-ми месный женский номер');
 $(".text_3").text('8-ми местный мужской номер');
+
+
+$(".sect_6").attr("href","img/photos_plan/photo_cor.jpg");
+$(".sect_7").attr("href","img/photos_plan/photo_cor.jpg");
+$(".sect_8").attr("href","img/photos_plan/photo_cor.jpg");
+
+//hover exit
+$(".sect_6").hover(function() {
+	$(".sect_7").css({"background-color": "rgba(23,78,108,.5)"});
+	$(".sect_8").css({"background-color": "rgba(23,78,108,.5)"});
+	},function() { 
+	$(".sect_7").css({"background-color": ""});
+	$(".sect_8").css({"background-color": ""});
+});
+
+$(".sect_7").hover(function() {
+	$(".sect_6").css({"background-color": "rgba(23,78,108,.5)"});
+	$(".sect_8").css({"background-color": "rgba(23,78,108,.5)"});
+	},function() { 
+	$(".sect_6").css({"background-color": ""});
+	$(".sect_8").css({"background-color": ""});
+});
+
+$(".sect_8").hover(function() {
+	$(".sect_7").css({"background-color": "rgba(23,78,108,.5)"});
+	$(".sect_6").css({"background-color": "rgba(23,78,108,.5)"});
+	},function() { 
+	$(".sect_7").css({"background-color": ""});
+	$(".sect_6").css({"background-color": ""});
+});
 
 
 
