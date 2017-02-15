@@ -1,0 +1,426 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.preview .img-wrapper {
+		float: unset;
+		margin: 0 auto 40px;
+
+	}
+
+	.preview .img-wrapper img {
+		max-width: 100%;
+	}
+
+	.preview article {
+		margin-left: 0;
+		margin-bottom: 30px;
+		text-align: justify;
+		}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header_content {
+		padding-top: 100px;
+	}
+	.header_content h1 {
+		font-size: 37px;
+
+	}
+
+	.header_content .buttons .button {
+		font-size: 17px;
+	}
+
+	.main_nmu {
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.85);
+		z-index: 10;
+		right: 0;
+		top: 0;
+	}
+	
+	.top_line .main_nmu ul {
+		margin-top: 110px;
+	}
+
+	.top_line .main_nmu ul li {
+		display: block;
+		font-size: 25px;
+		padding-bottom: 15px;
+		transition: all 0.5s ease;
+	}
+	
+	.top_line .main_nmu ul li:hover  {
+		background-color: rgba(255, 255, 255, 0.08);
+	}
+
+
+	.top_line .main_nmu ul li a {
+		display: inline-block;
+	}
+
+	.top_line .main_nmu ul li span {
+		display: inline-block;
+		font-size: 25px;
+	}
+	
+	.map {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	
+	.sect_1 {
+		right: 5%
+		top: 7%
+		width: 41%
+		height: 22%
+		background-color: transparent
+	}
+
+	.sect_2 {
+		left: 5%
+		top: 183px
+		width: 153px
+		height: 124px
+		background-color: transparent
+	}
+	.text_2 {
+		margin-top: 30px;
+	}
+
+	.text_3 {
+		margin-top: 30px;
+	}
+	
+	.sect_4 {
+		left: 22px;
+		top: 80px;
+		width: 86px;
+		height: 62px;
+		background-color: transparent;
+	}
+	.sect_5 {
+		left: 32%;
+		top: 32px;
+		width: 75px;
+		height: 45px;
+		background-color: transparent;
+}
+	.sect_6 {
+		left: 110px;
+		top: 80px;
+		width: 74px;
+		height: 62px;
+		background-color: transparent;
+}
+	.sect_7 {
+		left: 137px;
+		top: 142px;
+		width: 48px;
+		height: 97px;
+		background-color: transparent;
+}
+	.sect_8 {
+		left: 38%;
+		bottom: 32px;
+		width: 54px;
+		height: 87px;
+		background-color: transparent;
+}
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.header_content h1 {
+		font-size: 25px;
+	}
+
+	.sect_1 {
+		right: 22px;
+		top: 33px;
+		width: 134px;
+		height: 73px;
+		background-color: transparent;
+		padding: 0;
+}
+	.sect_2 {
+		left: 22px;
+		top: 144px;
+		width: 113px;
+		height: 92px;
+		background-color: transparent;
+		padding: 0;
+}
+	.sect_3 {
+		left: 22px
+		bottom: 33px
+		width: 106px
+		height: 86px
+		background-color: transparent
+		padding: 0
+	}
+
+	.sect_4 {
+		left: 6%
+		top: 80px
+		width: 87px
+		height: 61px
+		background-color: transparent
+	}
+
+	.sect_5 {
+		left: 32%;
+		top: 32px;
+		width: 74px;
+		height: 46px;
+		background-color: transparent;
+}
+	.sect_7 {
+		left: 137px;
+		top: 142px;
+		width: 47px;
+		height: 96px;
+		background-color: transparent;
+}
+	.sect_8 {
+		left: 130px;
+		bottom: 32px;
+		width: 54px;
+		height: 87px;
+		background-color: transparent;
+}
+	
+
+	}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.header_content h1 {
+		font-size: 19px;
+	}
+	.top_line {
+		padding-top: 0;
+	}
+	.header_content {
+		padding-top: 70px;
+	}
+	.header_content .buttons {
+		padding-top: 60px;
+	}
+
+	.map .blocks .text {
+		margin-top: 11px;
+		font-size: 11px;
+
+	}
+
+	.item_rule h3 {
+		font-size: 19px;
+	}
+	
+	h2 {
+		font-size: 23px;
+	}
+
+	.map .sect_1 {
+		right: 22px;
+		top: 9%;
+		width: 134px;
+		height: 21%;
+		background-color: transparent;
+	}
+
+	.map .sect_2 {
+		left: 22px;
+		top: 144px;
+		width: 113px;
+		height: 92px;
+		background-color: transparent;
+	}
+
+	.map .sect_3 {
+		left: 22px;
+		bottom: 32px;
+		width: 106px;
+		height: 86px;
+		background-color: transparent;
+	}
+
+	.map .sect_4 {
+		left: 22px;
+		top: 77px;
+		width: 80px;
+		height: 57px;
+		background-color: transparent;
+	}
+
+	.map .sect_5 {
+		left: 111px
+		top: 32px
+		width: 72px
+		height: 46px
+		background-color: transparent
+	}
+	.map .sect_6 {
+    left: 110px;
+    top: 80px;
+    width: 73px;
+    height: 61px;
+    background-color: transparent;
+}
+	.map .sect_7 {
+    left: 137px;
+    top: 141px;
+    width: 46px;
+    height: 97px;
+    background-color: transparent;
+	}
+
+	.map .sect_8 {
+    left: 38%;
+    bottom: 32px;
+    width: 54px;
+    height: 87px;
+    background-color: transparent;
+	}
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	.map .sect_1 {
+		right: 7%;
+		top: 32px;
+		width: 109px;
+		height: 59px;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.map .sect_2 {
+		left: 7%;
+		top: 40%;
+		width: 93px;
+		height: 76px;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.map .sect_3 {
+		left: 7%;
+		bottom: 10%;
+		width: 86px;
+		height: 72px;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.map .sect_4 {
+		left: 7%;
+		top: 70px;
+		width: 71px;
+		height: 49px;
+		background-color: transparent;
+	}
+
+	.map .sect_5 {
+		left: 32%;
+		top: 32px;
+		width: 61px;
+		height: 36px;
+		background-color: transparent;
+	}
+
+	.map .sect_6 {
+		left: 92px;
+		top: 70px;
+		width: 60px;
+		height: 49px;
+		background-color: transparent;
+	}
+
+	.map .sect_7 {
+		left: 114px;
+		top: 119px;
+		width: 38px;
+		height: 76px;
+		background-color: transparent;
+	}
+
+	.map .sect_8 {
+		left: 38%;
+		bottom: 32px;
+		width: 44px;
+		height: 70px;
+		background-color: transparent;
+	}
+
+	.map .blocks .text {
+		font-size: 11px;
+	}
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
