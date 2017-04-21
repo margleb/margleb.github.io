@@ -1,0 +1,367 @@
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/service/style.css?1469698633984*/
+.section_4 {
+    background:#e9e9e9;
+}
+.section_4 .wr {
+    color: #fff;
+    text-align: center;
+}
+.section_4 .item {
+    display: inline-block;
+    width: 240px;
+    background: #008bbf;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    color: #fff;
+    margin: 0 3px 50px;
+    position: relative;
+}
+.section_4 .item .serv_bot {
+    position: absolute;
+    bottom: -21px;
+    background: url("../img/service_bot.png") no-repeat;
+    height: 21px;
+    width: 240px;
+}
+
+
+.section_4 .item .img {
+    display: block;
+    width: 240px;
+    height: 150px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 0 0 15px;
+    line-height: 0;
+}
+.section_4 .item .name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section_4 .item .descr {
+    padding: 0 10px 10px;
+}
+.section_4 .item .bt_2 {
+    margin-top: 10px;
+    width: 180px;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/advantages/style.css?1469698633482*/
+.section_1 .wr {
+    text-align: center;
+}
+.section_1 .item {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    padding:0 30px;
+    font-size: 17px;
+    color: #666666;
+}
+
+.section_1 .item .img {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 130px;
+    border: 4px solid #7fc5df;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.section_1 .item .name {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/why_we/style.css?1469799471977*/
+.section_3 {
+    background:url("../img/sect_3_bg.png");
+    overflow: hidden;
+
+}
+.section_3 .wr {
+    color: #fff;
+    text-align: center;
+}
+.section_3 .item {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+}
+
+
+.section_3 .item .img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+    border-radius: 130px;
+    background: #fff;
+    border: 4px solid #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 5px 30px 10px 0;
+}
+.section_3 .item .name {
+
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 24px;
+}
+.section_3 .item .descr {
+    display: inline-block;
+    width: 600px;
+    vertical-align: middle;
+    margin-right: 134px;
+}
+.section_3 .item.second .descr {
+    margin-left: 154px;
+    margin-right: 0;
+}
+.section_3 .item.second .img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.section_3 .zag_big {
+    color: #fff;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/reviw/style.css?1469698633992*/
+.section_6 {
+    background:#e9e9e9;
+
+}
+.section_6 .wr {
+}
+.section_6 .item {
+    float: left;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: normal;
+    width: 50%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.section_6 .item .img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 130px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 5px 10px 10px 0;
+}
+.section_6 .item .name {
+    font-weight: 300;
+    color: #008bbf;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.section_6 .item .descr {
+    margin-top: 40px;
+    float: left;
+    width: 340px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.section_6 .item .descr .rev_hvost {
+    position: absolute;
+    background: url("../img/rev_hvost.png") no-repeat;
+    width: 32px;
+    height: 31px;
+    top: 70px;
+    left: -32px;
+}
+
+/* End */
+
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/partners/style.css?1469698633422*/
+.section_7 .wr {
+    text-align: center;
+}
+.section_7 .item {
+    float: left;
+    width: 20%;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.section_7 .item .img {
+    display:block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 0;
+}
+.section_7 .item:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* End */
+
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/gallery/style.css?14697993651184*/
+.section_10 {
+    background: #f2f2f2;
+}
+
+.section_10 .wr {
+    text-align: center;
+}
+.section_10 .item {
+    float: left;
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.section_10 .item:nth-child(4n+1) {
+    margin-right: 0;
+}
+
+.section_10 .item img {
+    display:block;
+    margin: 0 auto;
+    line-height: 0;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 0;
+}
+.section_10 .item .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/gallery/../../../../images/mask.png");
+    left: 0;
+    top: 0;
+    color: #fefefe;
+    font-size: 17px;
+    opacity: 0;
+    -webkit-transition: opacity ease-out 0.5s;
+    -moz-transition: opacity ease-out 0.5s;
+    -o-transition: opacity ease-out 0.5s;
+    transition: opacity ease-out 0.5s;
+}
+.section_10 .item .mask span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/gallery/../../../../images/plus.png") 50% 50% no-repeat;
+    padding-top: 70%;
+}
+.section_10 .item:hover .mask {
+    opacity: 1;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/plus_minus/style.css?1469698633574*/
+.plus_minus {
+    width: 100%;
+}
+.plus_minus td {
+    width: 50%;
+    padding-bottom: 20px;
+}
+.plus_minus thead td {
+    font-weight: bold;
+    font-size: 20px;
+    color: #008bbf;
+    padding-bottom: 30px;
+}
+.plus_minus thead td:nth-child(2) {
+    color: #777777;
+}
+
+.plus_minus td img {
+    vertical-align: middle;
+}
+.plus_minus td .desc {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    padding-left: 20px;
+    font-size: 17px;
+}
+.plus_minus td .desc .name {
+    color: #444444;
+    font-size: 21px;
+    font-weight: bold;
+    display: block;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/how_does_it_work/style.css?1469698633735*/
+.section_2 {
+    background: #f2f2f2;
+}
+.section_2 .wr {
+    text-align: center;
+}
+.section_2 .item {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    padding:0 30px 0 0;
+    font-size: 17px;
+    color: #666666;
+    background: url("../img/strel_right.png") 98% 48% no-repeat;
+}
+.section_2 .item:nth-child(5n) {
+    width: 150px;
+    padding: 0;
+    background: none;
+}
+
+.section_2 .item .img {
+    display: inline-block;
+    width: 122px;
+    height: 122px;
+    border-radius: 130px;
+    background: #008bbf;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 5px 0 10px;
+}
+.section_2 .item .name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 30px;
+}
+/* End */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/service/style.css?1469698633984 */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/advantages/style.css?1469698633482 */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/why_we/style.css?1469799471977 */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/reviw/style.css?1469698633992 */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/partners/style.css?1469698633422 */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/gallery/style.css?14697993651184 */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/plus_minus/style.css?1469698633574 */
+/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/how_does_it_work/style.css?1469698633735 */
