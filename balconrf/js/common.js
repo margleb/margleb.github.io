@@ -1,5 +1,8 @@
 $(function() {
 	
+	//equalheights
+	$('.nametop').equalHeights();
+	
 	//magnific popup
 	$("a[href='#callback']").magnificPopup({
 		mainClass: 'my-mfp-zoom-in',

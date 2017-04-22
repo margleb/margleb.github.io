@@ -10,7 +10,7 @@
 .section_4 .item {
     display: inline-block;
     width: 240px;
-    background: #008bbf;
+    background: #ED1C24;
     font-size: 16px;
     line-height: 1;
     text-align: left;
@@ -43,6 +43,7 @@
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
+	line-height: 1.4;
 }
 .section_4 .item .descr {
     padding: 0 10px 10px;
@@ -50,6 +51,7 @@
 .section_4 .item .bt_2 {
     margin-top: 10px;
     width: 180px;
+	color: #000;
 }
 /* End */
 
@@ -72,9 +74,12 @@
     width: 120px;
     height: 120px;
     border-radius: 130px;
-    border: 4px solid #7fc5df;
+    border: 4px solid #FB7482;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+	position: relative;
+	padding-top: 33px;
+	margin-bottom: 15px;
 }
 .section_1 .item .name {
     font-weight: bold;
@@ -85,10 +90,23 @@
 
 /* Start:/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/why_we/style.css?1469799471977*/
 .section_3 {
-    background:url("../img/sect_3_bg.png");
+    background:url("../img/background2.jpg");
     overflow: hidden;
+	background-size: cover;
 
 }
+
+.section_3::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5
+}
+
 .section_3 .wr {
     color: #fff;
     text-align: center;
@@ -112,7 +130,15 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     margin: 5px 30px 10px 0;
+	padding: 17px;
 }
+
+
+.section_3 .item .img img {
+	width: 100%;
+	height: 100%;
+}
+
 .section_3 .item .name {
 
     font-weight: bold;
@@ -136,6 +162,19 @@
 .section_3 .zag_big {
     color: #fff;
 }
+
+
+.item .img span {		
+		font-size: 35px;
+		color: #fff;
+		font-family: "Raleway",sans-serif;
+		font-weight: 600;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	}
+
+
+
+
 /* End */
 
 
@@ -213,10 +252,13 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     z-index: 0;
+	width: 100%;
 }
 .section_7 .item:hover {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
+
+
 
 /* End */
 
@@ -240,6 +282,8 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+
 .section_10 .item:nth-child(4n+1) {
     margin-right: 0;
 }
@@ -258,7 +302,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/gallery/../../../../images/mask.png");
+    background: rgba(0,0,0,.6);
     left: 0;
     top: 0;
     color: #fefefe;
@@ -273,12 +317,22 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: url("/bitrix/templates/vilka_lp_s1/components/bitrix/news.list/gallery/../../../../images/plus.png") 50% 50% no-repeat;
-    padding-top: 70%;
+    padding-top: 50%;
 }
 .section_10 .item:hover .mask {
     opacity: 1;
+	z-index: 10;
 }
+
+.item_gallery img {
+	transition: transform ease-out 0.5s;
+}
+
+.section_10 .item:hover .item_gallery img {
+	transform: rotate(10deg) scale(1.4);
+}
+
+
 /* End */
 
 
@@ -293,7 +347,7 @@
 .plus_minus thead td {
     font-weight: bold;
     font-size: 20px;
-    color: #008bbf;
+    color: #FE4155;
     padding-bottom: 30px;
 }
 .plus_minus thead td:nth-child(2) {
@@ -333,7 +387,7 @@
     padding:0 30px 0 0;
     font-size: 17px;
     color: #666666;
-    background: url("../img/strel_right.png") 98% 48% no-repeat;
+    background: url("../img/svg/arrow.svg") 98% 50% no-repeat;
 }
 .section_2 .item:nth-child(5n) {
     width: 150px;
@@ -346,7 +400,7 @@
     width: 122px;
     height: 122px;
     border-radius: 130px;
-    background: #008bbf;
+    background: #ED1C24;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     margin: 5px 0 10px;
@@ -356,12 +410,71 @@
     margin-bottom: 4px;
     font-size: 30px;
 }
-/* End */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/service/style.css?1469698633984 */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/advantages/style.css?1469698633482 */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/why_we/style.css?1469799471977 */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/reviw/style.css?1469698633992 */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/partners/style.css?1469698633422 */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/gallery/style.css?14697993651184 */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/plus_minus/style.css?1469698633574 */
-/* /bitrix/templates/vilka_lp_s1/components/bitrix/news.list/how_does_it_work/style.css?1469698633735 */
+
+/*form contact*/
+
+.form-callback {
+	max-width: 320px;
+	margin: auto;
+}
+
+.contact-form {
+	background: linear-gradient(to bottom, #FE4155 0%,#ED1C24 100%);
+	padding: 25px;
+	box-shadow: rgba(0,0,0,.2) 0 0 20px;
+	overflow: hidden;
+	border-radius: 6px;
+	position: relative;
+}
+
+.contact-form-head {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.contact-form-head strong {
+	font-size: 24px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 10px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 14px;
+}
+
+form label span {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    margin-bottom: 3px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+form label input {
+	background: #fff;
+	border: 1px solid #A71318;
+	padding: 9px 4%;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	color: #888888;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mpf-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+
+
+
