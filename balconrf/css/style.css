@@ -20,8 +20,7 @@
 }
 .section_4 .item .serv_bot {
     position: absolute;
-    bottom: -21px;
-    background: url("../img/service_bot.png") no-repeat;
+    bottom: -21px;ы
     height: 21px;
     width: 240px;
 }
@@ -46,7 +45,7 @@
 	line-height: 1.4;
 }
 .section_4 .item .descr {
-    padding: 0 10px 10px;
+    padding: 0 10px 20px;
 }
 .section_4 .item .bt_2 {
     margin-top: 10px;
@@ -67,6 +66,7 @@
     padding:0 30px;
     font-size: 17px;
     color: #666666;
+	opacity: 0;
 }
 
 .section_1 .item .img {
@@ -116,6 +116,7 @@
     font-size: 20px;
     line-height: 1;
     text-align: left;
+	opacity: 0;
 }
 
 
@@ -161,7 +162,11 @@
 }
 .section_3 .zag_big {
     color: #fff;
+	opacity: 0;
 }
+
+	
+
 
 
 .item .img span {		

@@ -41,5 +41,22 @@ $(".item_gallery").magnificPopup({
 			}
 		}
 });
-	
+
+
+ //Animation using animate.css
+
+
+        var animation1 = jQuery('.animation');
+
+        animation1.waypoint(function() {
+            var thisElement=$(this.element);
+            var animation = thisElement.attr('data-animation');
+            
+            thisElement.css('opacity', '1');
+            thisElement.addClass("animated " + animation).delay(2000);
+        }, {
+            offset: '75%',
+        });
+
+
 });
